@@ -110,11 +110,25 @@
   }
 
   .home-content {
-    @apply no-scrollbar flex w-full flex-1 flex-col gap-8 px-5 sm:px-8 py-7 lg:py-12 xl:max-h-screen xl:overflow-y-scroll;
+    /*@apply no-scrollbar flex w-full flex-1 flex-col gap-8 px-5 sm:px-8 py-7 lg:py-12 xl:max-h-screen xl:overflow-y-scroll;*/
+    width: 100%;
+    gap: 2rem;
+    justify-content: space-between;
+    padding-top: 1.75rem;
+    padding-right: 1.25rem;
+
   }
 
   .home-header {
-    @apply flex flex-col justify-between gap-8;
+    /*@apply flex flex-col justify-between gap-8;*/
+    display: flex;
+    gap: 2rem;
+    align-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    padding-left: 1.10rem;
+
   }
 
   .total-balance {
