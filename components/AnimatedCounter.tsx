@@ -10,7 +10,7 @@ const AnimatedCounter = ({ amount} :{ amount:number}) => {
           prefix="Rs."
         end={ amount}/>
     </div>
-  )
+)
 }
 
 export default AnimatedCounter
