@@ -107,15 +107,17 @@
   /* Home */
   .home {
     @apply no-scrollbar flex w-full flex-row max-xl:max-h-screen max-xl:overflow-y-scroll;
+    justify-content: space-between;
   }
 
   .home-content {
     /*@apply no-scrollbar flex w-full flex-1 flex-col gap-8 px-5 sm:px-8 py-7 lg:py-12 xl:max-h-screen xl:overflow-y-scroll;*/
-    width: 100%;
+    width: 80%;
     gap: 2rem;
     justify-content: space-between;
     padding-top: 1.75rem;
     padding-right: 1.25rem;
+    padding-left: 1.25rem;
 
   }
 
@@ -128,11 +130,13 @@
     flex-direction: column;
     flex-wrap: nowrap;
     padding-left: 1.10rem;
+    margin-bottom: 2.5rem;
 
   }
 
   .total-balance {
-    @apply flex w-full items-center gap-4 rounded-xl border border-gray-200 p-4 shadow-chart sm:gap-6 sm:p-6;
+    @apply flex  items-center gap-4 rounded-xl border border-gray-200 p-4 shadow-chart sm:gap-6 sm:p-6;
+    width:70%
   }
 
   .total-balance-chart {

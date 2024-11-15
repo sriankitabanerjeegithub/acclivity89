@@ -10,9 +10,9 @@ const ibmPlexSerif =IBM_Plex_Serif({
 })
 export const metadata: Metadata = {
   title: "Acclivity",
-  description: "Horizon is a modern banking platform for everyone",
+  description: "Acclivity is a modern banking platform for everyone",
   icons: {
-    icon: 'next.svg'
+    icon: 'a-coffee.svg'
   }
 };
 
