@@ -24,7 +24,7 @@ const TotalBalanceBox = ({
         
       < AnimatedCounter amount={totalCurrentBalance} />
         
-      </div>
+    </div>
     </div>
     </div>
     </section>

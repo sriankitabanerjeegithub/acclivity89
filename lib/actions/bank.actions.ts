@@ -45,7 +45,7 @@ export const getAccounts = async ({ userId }: getAccountsProps) => {
           type: accountData.type as string,
           subtype: accountData.subtype! as string,
           appwriteItemId: bank.$id,
-          sharableId: bank.sharableId,
+          sharaebleId: bank.sharableId,
         };
 
         return account;
@@ -53,7 +53,7 @@ export const getAccounts = async ({ userId }: getAccountsProps) => {
     );
 
     const totalBanks = accounts.length;
-    const totalCurrentBalance = accounts.reduce((total,account) => {
+    const totalCurrentBalance = accounts.reduce((total, account) => {
       return total + account.currentBalance;
     }, 0);
 
@@ -75,9 +75,9 @@ export const getAccount = async ({ appwriteItemId }: getAccountProps) => {
     });
     const accountData = accountsResponse.data.accounts[0];
 
-    //get transfer transactions from appwrite
+    // get transfer transactions from appwrite
     const transferTransactionsData = await getTransactionsByBankId({
-     bankId: bank.$id,
+      bankId: bank.$id,
     });
 
     const transferTransactions = transferTransactionsData.documents.map(
